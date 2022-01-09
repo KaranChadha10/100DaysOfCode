@@ -1,0 +1,38 @@
+CODE: Inserting Data
+Inserting Data
+
+The "formula":
+
+INSERT INTO table_name(column_name) VALUES (data);
+For example:
+
+INSERT INTO cats(name, age) VALUES ('Jetson', 7);
+
+Multiple Insert Statements 
+INSERT INTO People (first_name,last_name,age)
+VALUES
+("karan","chadha",20),
+("Harsh","Chabbra",21),
+("Mohit","Dawar",20);
+
+CODE: INSERT Challenges Solution
+INSERT Challenge Solution Code
+CREATE TABLE people
+  (
+    first_name VARCHAR(20),
+    last_name VARCHAR(20),
+    age INT
+  );
+INSERT INTO people(first_name, last_name, age)
+VALUES ('Tina', 'Belcher', 13);
+INSERT INTO people(age, last_name, first_name)
+VALUES (42, 'Belcher', 'Bob');
+INSERT INTO people(first_name, last_name, age)
+VALUES('Linda', 'Belcher', 45)
+  ,('Phillip', 'Frond', 38)
+  ,('Calvin', 'Fischoeder', 70);
+DROP TABLE people; 
+
+SELECT * FROM people; 
+
+show tables; 

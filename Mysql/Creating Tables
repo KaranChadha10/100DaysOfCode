@@ -1,0 +1,43 @@
+CODE: Using Databases
+USE <database name>;
+ 
+-- example:
+USE dog_walking_app;
+ 
+SELECT database();
+
+
+
+CODE: How Do We Know It Worked?
+SHOW TABLES;
+ 
+SHOW COLUMNS FROM tablename;
+ 
+DESC tablename;
+
+
+
+CODE: Dropping Tables
+Dropping Tables
+DROP TABLE <tablename>; 
+
+A specific example:
+
+DROP TABLE cats; 
+
+Be careful with this command!
+
+CODE: Creating Your Own Tables Challenge
+
+
+CREATE TABLE pastries
+  (
+    name VARCHAR(50),
+    quantity INT
+  );
+ 
+SHOW TABLES;
+ 
+DESC pastries;
+ 
+DROP TABLE pastries;
