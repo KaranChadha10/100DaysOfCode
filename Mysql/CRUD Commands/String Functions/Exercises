@@ -1,0 +1,23 @@
+select UPPER(REVERSE('Why does my cat look at me with such hatred?'));
+
+
+I like cats
+
+I-like-cats
+
+
+select REPLACE(title,' ','->') from books;
+
+select author_lname as forward, REVERSE(author_lname) as backward from books;
+
+ select UPPER(CONCAT(author_fname,' ',author_lname)) as 'full name in caps' from books;
+
+ select CONCAT(title,' was released in ',released_year) as blurb from books;
+
+ select title, CHAR_LENGTH(title) as 'character count' from books;
+
+SELECT
+   CONCAT(SUBSTRING(title, 1, 10), '...') AS 'short title',
+   CONCAT(author_lname, ',', author_fname) AS author,
+   CONCAT(stock_quantity, ' in stock') AS quantity
+FROM books;
