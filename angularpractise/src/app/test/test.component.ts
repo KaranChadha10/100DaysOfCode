@@ -1,4 +1,4 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 
 @Component({
   selector: 'app-test',
@@ -8,9 +8,15 @@ import { Component, Input, OnInit } from '@angular/core';
 export class TestComponent implements OnInit {
 
   @Input() public parentData = '';
+
+  @Output() public childEvent = new EventEmitter();
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  fireEvent(){
+    this.childEvent.emit('Hey CodeEvolution');
   }
 
 }

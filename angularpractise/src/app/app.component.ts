@@ -9,6 +9,7 @@ export class AppComponent {
   title = 'angularpractise';
   
   public name="Karan";
+  public message="";
 }
 
 
